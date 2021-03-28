@@ -9,9 +9,6 @@ app.use(bodyParser.json());
 db();
 const port = process.env.PORT || 3000;
 app.use(cors());
-app.get("/", async (req, res) => {
-  res.send("hello");
-});
 
 app.post("/", async (req, res) => {
   // console.log(req.body.rollno);
