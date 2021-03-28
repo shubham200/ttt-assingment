@@ -24,7 +24,7 @@ function Status() {
   const [results, setResults] = useState([]);
   const [isReady, setIsReady] = useState(false);
   const [reload, setReload] = useState(false);
-  const res = "pass";
+  
 
   const handleClick = async () => {
     if (text === "") {
@@ -32,8 +32,7 @@ function Status() {
       setIsReady(false);
       return -1;
     }
-    let rollNos = text.split(",");
-    rollNos = rollNos.map((rollNo) => Number(rollNo));
+
     if (isReady) {
       results.length = 0;
       setReload(!reload);
